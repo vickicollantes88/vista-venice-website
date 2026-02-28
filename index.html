@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vista Venice Highland Resort</title>
+<title>Vista Venice Highland Resort | Morong, Bataan</title>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,115 +13,157 @@
 
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-  <div class="logo">Vista Venice</div>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#amenities">Amenities</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#rates">Rates</a></li>
-      <li><a href="#contact" class="btn-nav">Book Now</a></li>
-    </ul>
-  </nav>
+    <div class="logo">Vista Venice</div>
+    <nav>
+        <a href="#rooms">Rooms</a>
+        <a href="#packages">Packages</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact" class="nav-btn">Book Now</a>
+    </nav>
 </header>
 
+<!-- HERO SECTION -->
 <section class="hero">
-  <video autoplay muted loop class="hero-video">
-    <source src="your-video.mp4" type="video/mp4">
-  </video>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Escape to Elevated Serenity</h1>
-    <p>Where cool highland breeze meets luxury relaxation.</p>
-    <div class="hero-buttons">
-      <a href="#contact" class="btn-primary">Book Now</a>
-      <a href="#gallery" class="btn-secondary">View Gallery</a>
+    <!-- Replace with your video -->
+    <video autoplay muted loop class="hero-video">
+        <source src="your-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Escape to Elevated Serenity</h1>
+        <p>Where cool highland breeze meets unforgettable luxury.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn primary">Book Now</a>
+            <a href="#rooms" class="btn secondary">View Rates</a>
+            <a href="#gallery" class="btn secondary">View Gallery</a>
+        </div>
     </div>
-  </div>
 </section>
 
-<section id="about" class="section about">
-  <div class="container">
-    <h2>Welcome to Vista Venice Highland Resort</h2>
-    <p>
-      Nestled in the refreshing highlands, Vista Venice Highland Resort is your sanctuary above the ordinary.
-      Experience breathtaking views, elegant spaces, and an atmosphere crafted for unforgettable memories.
-    </p>
-  </div>
-</section>
+<!-- ROOMS -->
+<section id="rooms" class="section">
+<h2 class="section-title">Luxury Accommodations</h2>
+<div class="card-grid">
 
-<section id="amenities" class="section amenities">
-  <h2>Luxury Amenities</h2>
-  <div class="amenities-grid">
-    <div class="card"><i class="fas fa-swimming-pool"></i><h3>Infinity Pool</h3><p>Relax with scenic highland views.</p></div>
-    <div class="card"><i class="fas fa-mountain"></i><h3>Scenic Views</h3><p>Perfect sunrise & sunset backdrop.</p></div>
-    <div class="card"><i class="fas fa-calendar-alt"></i><h3>Event Spaces</h3><p>Ideal for weddings & team buildings.</p></div>
-    <div class="card"><i class="fas fa-bed"></i><h3>Luxury Rooms</h3><p>Comfort meets modern elegance.</p></div>
-    <div class="card"><i class="fas fa-utensils"></i><h3>Dining Area</h3><p>Cozy & Instagram-worthy spots.</p></div>
-    <div class="card"><i class="fas fa-camera"></i><h3>Photo Spots</h3><p>Capture stunning memories.</p></div>
-  </div>
-</section>
-
-<section id="gallery" class="section gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <img src="image1.jpg" onclick="openLightbox(this.src)">
-    <img src="image2.jpg" onclick="openLightbox(this.src)">
-    <img src="image3.jpg" onclick="openLightbox(this.src)">
-    <img src="image4.jpg" onclick="openLightbox(this.src)">
-  </div>
-</section>
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img">
+<div class="card">
+<h3>Deluxe Room</h3>
+<p>Lean Rate: ₱4,500</p>
+<p>Peak Rate: ₱5,450</p>
 </div>
 
-<section id="rates" class="section rates">
-  <h2>Rates & Packages</h2>
-  <div class="rates-grid">
-    <div class="rate-card">
-      <h3>Day Tour</h3>
-      <p class="price">₱999 / person</p>
-      <button>Book Now</button>
-    </div>
-    <div class="rate-card featured">
-      <h3>Overnight Stay</h3>
-      <p class="price">₱6,999 / night</p>
-      <button>Book Now</button>
-    </div>
-    <div class="rate-card">
-      <h3>Event Package</h3>
-      <p class="price">Custom Quote</p>
-      <button>Inquire Now</button>
-    </div>
-  </div>
+<div class="card">
+<h3>Deluxe Mountain View</h3>
+<p>Lean Rate: ₱5,400</p>
+<p>Peak Rate: ₱6,450</p>
+</div>
+
+<div class="card">
+<h3>Premier Room</h3>
+<p>Lean Rate: ₱5,000</p>
+<p>Peak Rate: ₱5,950</p>
+</div>
+
+<div class="card">
+<h3>Superior Room</h3>
+<p>Lean Rate: ₱5,400</p>
+<p>Peak Rate: ₱6,450</p>
+</div>
+
+</div>
 </section>
 
-<section class="section testimonials">
-  <h2>Guest Experiences</h2>
-  <div class="testimonial-grid">
-    <div class="testimonial">“A hidden highland paradise!”</div>
-    <div class="testimonial">“Perfect for family bonding.”</div>
-    <div class="testimonial">“Instagram-worthy everywhere!”</div>
-  </div>
+<!-- GROUP PACKAGES -->
+<section id="packages" class="section dark">
+<h2 class="section-title">Group Packages</h2>
+<div class="card-grid">
+
+<div class="card highlight">
+<h3>Package 1 – ₱2,150</h3>
+<ul>
+<li>Room Accommodation</li>
+<li>Buffet Lunch, Dinner & Breakfast</li>
+<li>Free use of amenities</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Package 3 – ₱2,750</h3>
+<ul>
+<li>Function Hall (8 hrs)</li>
+<li>Team Building Facilities</li>
+<li>Buffets Included</li>
+</ul>
+</div>
+
+<div class="card premium">
+<h3>Package 5 – ₱3,200</h3>
+<ul>
+<li>Team Building Facilitator</li>
+<li>1 Extreme Sport</li>
+<li>All Amenities Included</li>
+</ul>
+</div>
+
+</div>
 </section>
 
-<section id="contact" class="section contact">
-  <h2>Book Your Escape</h2>
-  <form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="tel" placeholder="Phone Number" required>
-    <input type="date" required>
-    <input type="number" placeholder="Number of Guests" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Submit Booking</button>
-  </form>
-  <p>Follow us on Facebook</p>
+<!-- ACTIVITIES -->
+<section id="activities" class="section">
+<h2 class="section-title">Adventure & Water Sports</h2>
+<div class="card-grid">
+
+<div class="card">
+<h3>Kayak</h3>
+<p>Single: ₱250</p>
+<p>Double: ₱550</p>
+</div>
+
+<div class="card">
+<h3>Aqua Bike</h3>
+<p>₱800 (30 mins)</p>
+</div>
+
+<div class="card">
+<h3>Extreme Sports</h3>
+<p>Zipline / Rappelling / Wall Climbing</p>
+<p>₱350 per activity</p>
+</div>
+
+</div>
 </section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+<h2 class="section-title">Book Your Escape</h2>
+
+<form class="booking-form">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number">
+<input type="date">
+<input type="number" placeholder="Number of Guests">
+<textarea placeholder="Message"></textarea>
+<button type="submit" class="btn primary">Send Inquiry</button>
+</form>
+
+<div class="contact-info">
+<p><i class="fa fa-phone"></i> 09989888342</p>
+<p><i class="fa fa-envelope"></i> vista01venice@gmail.com</p>
+<p><i class="fa fa-map-marker-alt"></i> Morong, Bataan</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Vista Venice Highland Resort | Morong, Bataan</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
