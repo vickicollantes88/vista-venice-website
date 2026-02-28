@@ -138,14 +138,22 @@
 <section id="contact" class="section dark">
 <h2 class="section-title">Book Your Escape</h2>
 
-<form class="booking-form">
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
-<input type="tel" placeholder="Phone Number">
-<input type="date">
-<input type="number" placeholder="Number of Guests">
-<textarea placeholder="Message"></textarea>
-<button type="submit" class="btn primary">Send Inquiry</button>
+<form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="booking-form">
+
+    <input type="hidden" name="form-name" value="booking">
+
+    <p style="display:none;">
+        <label>Don’t fill this out: <input name="bot-field"></label>
+    </p>
+
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+    <input type="date" name="date">
+    <input type="number" name="guests" placeholder="Number of Guests">
+    <textarea name="message" placeholder="Message"></textarea>
+
+    <button type="submit" class="btn primary">Send Inquiry</button>
 </form>
 
 <div class="contact-info">
@@ -163,4 +171,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
