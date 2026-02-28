@@ -1,0 +1,75 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family:'Poppins',sans-serif;background:#f8f9fa;color:#333;scroll-behavior:smooth;}
+
+h1,h2,h3 {font-family:'Playfair Display',serif;}
+
+.navbar {
+  position:fixed;width:100%;display:flex;justify-content:space-between;
+  padding:20px 60px;background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(15px);z-index:1000;
+}
+
+.navbar ul {display:flex;list-style:none;gap:30px;}
+.navbar a {text-decoration:none;color:white;font-weight:500;}
+
+.btn-nav {background:linear-gradient(45deg,#2c7da0,#52b788);padding:8px 16px;border-radius:20px;}
+
+.hero {height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:white;}
+.hero-video {position:absolute;width:100%;height:100%;object-fit:cover;}
+.hero-overlay {position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.hero-content {position:relative;z-index:2;}
+
+.btn-primary, .btn-secondary {
+  padding:12px 28px;margin:10px;border-radius:30px;
+  text-decoration:none;font-weight:500;
+}
+
+.btn-primary {background:linear-gradient(45deg,#2c7da0,#52b788);color:white;}
+.btn-secondary {border:1px solid white;color:white;}
+
+.section {padding:100px 10%;text-align:center;}
+.amenities-grid, .gallery-grid, .rates-grid, .testimonial-grid {
+  display:grid;gap:30px;margin-top:40px;
+}
+
+.amenities-grid {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.card {
+  background:white;padding:40px;border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+.card:hover {transform:translateY(-10px);}
+
+.gallery-grid {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.gallery-grid img {width:100%;border-radius:20px;cursor:pointer;transition:0.3s;}
+.gallery-grid img:hover {transform:scale(1.05);}
+
+.lightbox {
+  position:fixed;display:none;align-items:center;justify-content:center;
+  background:rgba(0,0,0,0.8);width:100%;height:100%;top:0;left:0;
+}
+.lightbox img {max-width:80%;border-radius:20px;}
+
+.rates-grid {grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.rate-card {
+  background:white;padding:40px;border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+.featured {transform:scale(1.05);border:2px solid #52b788;}
+
+.testimonial {
+  background:white;padding:30px;border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.contact form {
+  display:grid;gap:15px;max-width:500px;margin:40px auto;
+}
+input,textarea,button {
+  padding:12px;border-radius:10px;border:1px solid #ddd;
+}
+button {background:linear-gradient(45deg,#2c7da0,#52b788);color:white;border:none;}
+
+@media(max-width:768px){
+  .navbar {padding:20px;}
+}
