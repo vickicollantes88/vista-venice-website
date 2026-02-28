@@ -281,7 +281,7 @@ padding: 20px;
 
 .group-packages {
   position: relative;
-  padding: 120px 20px;
+  padding: 120px 60px;
   color: white;
   text-align: center;
   background: url("images/water5.jpg") center/cover no-repeat;
@@ -292,7 +292,7 @@ padding: 20px;
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(10, 25, 35, 0.75); /* clean dark overlay */
+  background: rgba(10, 25, 35, 0.8);
   z-index: 0;
 }
 
@@ -301,14 +301,96 @@ padding: 20px;
   z-index: 1;
 }
 
+/* GRID LAYOUT */
 .package-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-  max-width: 1400px;
+  gap: 35px;
+  margin-top: 70px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* CARD STYLE */
+.package-card {
+  background: rgba(20, 35, 45, 0.95);
+  padding: 40px 30px;
+  border-radius: 20px;
+  transition: 0.35s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* TITLE */
+.package-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* PRICE */
+.price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffcc70;
+}
+
+/* LIST */
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.package-card ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.package-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #ffcc70;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.package-btn:hover {
+  background: white;
+}
+
+/* FEATURED CARD */
+.featured {
+  border: 2px solid #ffcc70;
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #ffcc70;
+  color: black;
+  padding: 6px 14px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* PREMIUM CARD */
+.premium {
+  border: 2px solid #ff8c42;
 }
 
 
@@ -392,6 +474,7 @@ padding: 20px;
     column-count: 1;
   }
 }
+
 
 
 
