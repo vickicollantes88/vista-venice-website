@@ -284,7 +284,7 @@ padding: 20px;
   padding: 100px 20px;
   color: white;
   text-align: center;
-  background: url("images/group-bg.jpg") center/cover no-repeat;
+  background: url("images/water5.jpg") center/cover no-repeat;
 }
 
 .group-packages::before {
@@ -470,6 +470,7 @@ background: linear-gradient(
     column-count: 1;
   }
 }
+
 
 
 
