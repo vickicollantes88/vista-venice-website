@@ -151,6 +151,13 @@ text-align: center;
 padding: 20px;
 }
 
+/* ===== LOGO ===== */
+.logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* ================= GALLERY ================= */
 
 .gallery-section {
@@ -231,3 +238,4 @@ padding: 20px;
     column-count: 1;
   }
 }
+
