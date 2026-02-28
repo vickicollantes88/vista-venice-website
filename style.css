@@ -412,6 +412,77 @@ padding: 20px;
 }
 
 
+/* ===== ADVENTURE & WATER SPORTS ===== */
+
+.adventure {
+  padding: 120px 40px;
+  background: #fff9e6; /* super light yellow */
+  text-align: center;
+}
+
+.adventure h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+/* GRID */
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.adventure-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.adventure-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.adventure-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT */
+.adventure-content {
+  padding: 25px;
+}
+
+.adventure-content h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.adventure-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .adventure-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ================= GALLERY ================= */
 
 .gallery-section {
@@ -492,6 +563,7 @@ padding: 20px;
     column-count: 1;
   }
 }
+
 
 
 
