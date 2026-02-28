@@ -1,8 +1,151 @@
-function openLightbox(src){
-  document.getElementById('lightbox').style.display='flex';
-  document.getElementById('lightbox-img').src=src;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
 }
 
-function closeLightbox(){
-  document.getElementById('lightbox').style.display='none';
+body {
+font-family: 'Poppins', sans-serif;
+background: #f8f9fb;
+color: #222;
+}
+
+h1,h2,h3 {
+font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+position: fixed;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 20px 60px;
+background: rgba(255,255,255,0.1);
+backdrop-filter: blur(12px);
+z-index: 1000;
+}
+
+.navbar a {
+margin-left: 20px;
+text-decoration: none;
+color: white;
+font-weight: 500;
+}
+
+.nav-btn {
+background: linear-gradient(135deg,#00c6ff,#0072ff);
+padding: 8px 18px;
+border-radius: 30px;
+}
+
+.hero {
+height: 100vh;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+}
+
+.hero-video {
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -2;
+}
+
+.hero-overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+z-index: -1;
+}
+
+.hero-content h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+
+.btn {
+display: inline-block;
+padding: 12px 28px;
+margin: 10px;
+border-radius: 30px;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.primary {
+background: linear-gradient(135deg,#00c6ff,#0072ff);
+color: white;
+}
+
+.secondary {
+border: 1px solid white;
+color: white;
+}
+
+.section {
+padding: 100px 10%;
+text-align: center;
+}
+
+.section.dark {
+background: #0d1b2a;
+color: white;
+}
+
+.section-title {
+font-size: 2.5rem;
+margin-bottom: 60px;
+}
+
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+gap: 30px;
+}
+
+.card {
+background: white;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+transition: 0.4s;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+}
+
+.section.dark .card {
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(8px);
+color: white;
+}
+
+.booking-form {
+display: grid;
+gap: 15px;
+max-width: 500px;
+margin: auto;
+}
+
+.booking-form input,
+.booking-form textarea {
+padding: 12px;
+border-radius: 10px;
+border: none;
+}
+
+footer {
+background: #000;
+color: white;
+text-align: center;
+padding: 20px;
 }
