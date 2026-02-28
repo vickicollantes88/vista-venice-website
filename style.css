@@ -564,6 +564,56 @@ padding: 20px;
   }
 }
 
+/* ===== ROAD MAP SECTION ===== */
+
+.roadmap {
+  padding: 120px 40px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.roadmap h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+/* Layout */
+.roadmap-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Image */
+.roadmap-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* Google Map */
+.roadmap-map {
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .roadmap-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-map {
+    height: 400px;
+  }
+}
 
 
 
