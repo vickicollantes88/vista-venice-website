@@ -304,12 +304,26 @@ padding: 20px;
 /* GRID LAYOUT */
 .package-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
   margin-top: 70px;
-  max-width: 1300px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .package-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* CARD STYLE */
@@ -474,6 +488,7 @@ padding: 20px;
     column-count: 1;
   }
 }
+
 
 
 
