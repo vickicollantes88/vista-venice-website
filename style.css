@@ -281,7 +281,7 @@ padding: 20px;
 
 .group-packages {
   position: relative;
-  padding: 120px 60px;
+  padding: 120px 20px;
   color: white;
   text-align: center;
   background: url("images/water5.jpg") center/cover no-repeat;
@@ -292,7 +292,7 @@ padding: 20px;
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(10, 25, 35, 0.8);
+  background: rgba(10, 25, 35, 0.85);
   z-index: 0;
 }
 
@@ -304,34 +304,22 @@ padding: 20px;
 /* GRID LAYOUT */
 .package-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 25px;
   margin-top: 70px;
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1700px;   /* wide enough for 5 cards */
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Tablet */
-@media (max-width: 1200px) {
-  .package-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .package-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 /* CARD STYLE */
 .package-card {
   background: rgba(20, 35, 45, 0.95);
-  padding: 40px 30px;
+  padding: 30px 20px;
   border-radius: 20px;
   transition: 0.35s ease;
+  position: relative;
 }
 
 .package-card:hover {
@@ -343,14 +331,14 @@ padding: 20px;
 .package-card h3 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* PRICE */
 .price {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: #ffcc70;
 }
 
@@ -358,24 +346,24 @@ padding: 20px;
 .package-card ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .package-card ul li {
-  margin-bottom: 8px;
-  font-size: 0.9rem;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
   opacity: 0.9;
 }
 
 /* BUTTON */
 .package-btn {
   display: inline-block;
-  padding: 10px 22px;
+  padding: 8px 20px;
   background: #ffcc70;
   color: #000;
   border-radius: 30px;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   transition: 0.3s ease;
 }
@@ -387,7 +375,7 @@ padding: 20px;
 /* FEATURED CARD */
 .featured {
   border: 2px solid #ffcc70;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .badge {
@@ -405,6 +393,22 @@ padding: 20px;
 /* PREMIUM CARD */
 .premium {
   border: 2px solid #ff8c42;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .package-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 
@@ -488,6 +492,7 @@ padding: 20px;
     column-count: 1;
   }
 }
+
 
 
 
