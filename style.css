@@ -568,7 +568,7 @@ padding: 20px;
 
 .contact {
   padding: 120px 40px;
-  background: #fff9e6; /* light yellow theme */
+  background: #fff9e6;
   text-align: center;
 }
 
@@ -579,11 +579,40 @@ padding: 20px;
   color: #222;
 }
 
-/* Form Container */
-.contact form {
-  max-width: 600px;
+/* Layout */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
   margin: 0 auto;
-  background: #ffffff;
+  align-items: start;
+}
+
+/* Contact Info */
+.contact-info {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form */
+.contact form {
+  background: white;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
@@ -592,27 +621,22 @@ padding: 20px;
   gap: 20px;
 }
 
-/* Inputs & Textarea */
 .contact input,
 .contact textarea {
-  width: 100%;
   padding: 14px 18px;
   border-radius: 12px;
   border: 1px solid #ddd;
   font-size: 0.95rem;
-  font-family: inherit;
   outline: none;
   transition: 0.3s ease;
 }
 
-/* Focus Effect */
 .contact input:focus,
 .contact textarea:focus {
   border-color: #ffcc70;
   box-shadow: 0 0 0 3px rgba(255, 204, 112, 0.2);
 }
 
-/* Button */
 .contact button {
   padding: 14px;
   border: none;
@@ -631,13 +655,9 @@ padding: 20px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .contact {
-    padding: 80px 20px;
-  }
-
-  .contact form {
-    padding: 30px 20px;
+@media (max-width: 900px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -691,6 +711,7 @@ padding: 20px;
     height: 400px;
   }
 }
+
 
 
 
