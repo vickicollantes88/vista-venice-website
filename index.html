@@ -240,38 +240,25 @@
     
 
 <!-- CONTACT -->
-<section id="contact" class="section dark">
-<h2 class="section-title">Book Your Escape</h2>
+<section id="contact" class="contact">
+  <h2>Send Us an Inquiry</h2>
 
-<form action="https://formsubmit.co/vistaveniceresorts@yahoo.com" method="POST">
+  <form action="https://formsubmit.co/vistaveniceresorts@yahoo.com" method="POST">
+    
+    <input type="text" name="name" placeholder="Full Name" required>
+    
+    <input type="email" name="email" placeholder="Email Address" required>
+    
+    <input type="text" name="phone" placeholder="Phone Number">
+    
+    <textarea name="message" rows="5" placeholder="Your Inquiry" required></textarea>
 
-  <input type="text" name="name" placeholder="Full Name" required>
-  
-  <input type="email" name="email" placeholder="Email Address" required>
-  
-  <input type="text" name="phone" placeholder="Phone Number">
-  
-  <textarea name="message" rows="5" placeholder="Your Inquiry" required></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Resort Inquiry!">
 
-  <!-- Disable Captcha -->
-  <input type="hidden" name="_captcha" value="false">
+    <button type="submit">Send Inquiry</button>
 
-  <!-- Optional: Custom Subject -->
-  <input type="hidden" name="_subject" value="New Resort Inquiry!">
-
-  <!-- Optional: Redirect After Submit -->
-  <input type="hidden" name="_next" value="https://vistavenice.vercel.app/thankyou.html">
-
-  <button type="submit">Send Inquiry</button>
-
-</form>
-
-<div class="contact-info">
-<p><i class="fa fa-phone"></i> 09989888342 / Look for Marivic Collantes </p>
-<p><i class="fa fa-envelope"></i> vistaveniceresorts@yahoo.com</p>
-<p><i class="fa fa-map-marker-alt"></i> Sitio Marucdoc, Brgy. Nagbalayong, Morong, Bataan</p>
-</div>
-
+  </form>
 </section>
 
     <!-- ===== ROAD MAP + GOOGLE MAP ===== -->
@@ -308,6 +295,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
